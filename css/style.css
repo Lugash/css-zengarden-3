@@ -1,0 +1,306 @@
+/*****************/
+/* CSS ZENGARDEN */
+/*****************/
+
+
+/*************/
+/* Lugash    */
+/*************/
+
+
+/***********/
+/* base    */
+/***********/
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,700');
+
+body {
+	font-family: 'Open Sans', Helvetica, arial, sans-serif;
+	color: #fff;
+	font-size: 16px;
+	font-weight: lighter;
+    line-height: 1.5;
+    overflow-y: scroll;
+    overflow-x: hidden;
+}
+a {
+	text-decoration: underline;
+	color: #fff;
+    font-weight: bold;
+
+	transition: all .2s ease;
+	-o-transition: all .2s ease;
+	-webkit-transition: all .2s ease;
+	-moz-transition: all .2s ease;
+	-ms-transition: all .2s ease;
+}
+a:hover, a:focus {
+	color: #CA925C;
+}
+
+
+/**********/
+/* header */
+/**********/
+.intro {
+
+}
+header {
+    min-height: 75vh;
+    background: url("../img/1.jpg") no-repeat bottom center/cover;
+    background-attachment: fixed;
+
+}
+header h1 {
+    display: block;
+    width: 50%;
+    margin: 0 auto;
+    transform: translateY(2rem);
+    text-align: center;
+    padding: 1rem;
+	font-size: 4rem;
+	color: #CA925C;
+    border-top: 1px solid #CA925C;
+    border-bottom: 1px solid #CA925C;
+    border-left: none;
+    border-right: none;
+    border-radius: 1rem;
+    /*text-shadow: 1px 1px 1px  rgba(255,255,255,.2);*/
+}
+@media screen and (max-width: 500px) {
+    header h1 {
+        width: 80%;
+
+    }
+}
+header h2 {
+    margin-top: 4rem;
+    padding: 1rem;
+	font-size: 1.5rem;
+	text-align: right;
+    color: #CA925C;
+    opacity: .7;
+}
+.summary {
+    font-family: 'Helvetica Neue', sans-serif;
+	width: 25%;
+    padding: 1rem;
+    position: absolute;
+    transform: translateY(-5rem);
+    font-size: .9rem;
+    text-shadow: 2px 2px 5px rgba(0,0,0,0.8);
+    background-color: #CA925C;
+    opacity: .8;
+
+}
+@media screen and (max-width: 1000px) {
+    .summary {
+        width: auto;
+        position: relative;
+        transform: none;
+    }
+}
+.summary p + p {
+    margin-top: 1rem;
+}
+.summary a:hover, .summary a:focus {
+    color: rgba(0,0,0,0.8);
+}
+.preamble {
+    margin: 0rem auto;
+    background-color: #0c0c0c;
+    padding: 2rem;
+}
+
+.preamble h3 {
+    text-align: center;
+    font-size: 1.5rem;
+    margin-bottom: 2rem;
+    padding: 1rem;
+    color: rgba(255,255,255,.8);
+    /*border-left: 1px dashed rgba(255,255,255,.9);
+    border-top: 1px dashed rgba(255,255,255,.9);*/
+}
+.preamble p {
+    width: 50%;
+    margin: auto;
+    max-width: 50rem;
+    margin-bottom: 2rem;
+}
+@media screen and (max-width: 500px) {
+    .preamble p{
+        width: 80%;
+
+    }
+}
+
+
+/***********/
+/*  main   */
+/***********/
+.main {
+    background-color: black;
+}
+.explanation, .participation, .benefits, .requirements {
+    background: url("../img/2.jpg") no-repeat bottom center/cover;
+    padding: 2rem 5%;
+}
+@media screen and (min-width: 1000px) {
+    .explanation, .participation, .benefits, .requirements {
+        width: 50%;
+        float: left;
+        padding: 1rem;
+        box-sizing: border-box;
+        /*border-left: 1px solid  rgba(0,0,0,.8);*/
+        /*border-right: 1px solid  rgba(0,0,0,.8);*/
+        border-top: none;
+        min-height: 45rem;
+    }
+    .benefits, .requirements {
+        min-height: 70rem;
+    }
+}
+.explanation h3, .participation h3, .benefits h3, .requirements h3 {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+    padding: 1rem;
+    text-shadow: 2px 2px 5px rgba(0,0,0,0.8);
+    color:  rgba(255,255,255,.9);
+    display: block;
+    border-right: 1px dashed rgba(255,255,255,.9);
+    border-bottom: 1px dashed rgba(255,255,255,.9);
+}
+@media screen and (min-width: 1000px) {
+    .explanation h3, .participation h3, .benefits h3, .requirements h3 {
+        text-align: center;
+    }
+}
+.explanation p, .benefits p {
+    width: 50%;
+    margin: 1rem auto;
+    margin-left: 10%;
+    text-shadow: 2px 2px 5px rgba(0,0,0,0.8);
+}
+.participation p, .requirements p {
+    width: 50%;
+    margin: 1rem auto;
+    margin-right: 10%;
+    text-shadow: 2px 2px 5px rgba(0,0,0,0.8);
+}
+@media screen and (min-width: 1000px) {
+    .explanation p, .participation p, .benefits p, .requirements p {
+        width: 84%;
+        padding: 2rem;
+        margin: 0;
+    }
+}
+@media screen and (max-width: 500px) {
+    .explanation p, .participation p, .benefits p, .requirements p {
+        width: 80%;
+        padding: 2rem;
+        margin: 0;
+    }
+}
+.participation {
+    background: url("../img/3.jpg") no-repeat bottom center/cover;
+}
+.benefits {
+    background: url("../img/4.jpg") no-repeat bottom center/cover;
+}
+.requirements {
+    background: url("../img/5.jpg") no-repeat bottom center/cover;
+}
+
+
+/***********/
+/*  foot   */
+/***********/
+footer {
+    clear: left;
+    padding: 50%;
+    margin: 0 auto;
+    border-top: 2px solid white;
+	padding: 5px;
+	background-color: #0c0c0c;
+	box-shadow: 10px 10px 3px rgba(0,0,0,0.5);
+	font-size: 1.5em;
+	text-align: left;
+	border-radius: 0px 0px 0px 4px;
+}
+.zen-validate-html, .zen-validate-css, .zen-license, .zen-accessibility, .zen-github  {
+    background-image: url("../img/1.png");
+    background-repeat: no-repeat;
+    background-size: 65px;
+    background-position: 50% 50%;
+    padding: 25px 25px;
+    height: 2rem;
+    display: inline-block;
+    vertical-align: middle;
+    width: 12%;
+    margin: 1rem 1%;
+    font-size: 0;
+    opacity: .5;
+}
+@media screen and (max-width: 500px) {
+    .zen-validate-html, .zen-validate-css, .zen-license, .zen-accessibility, .zen-github  {
+        width: 80%;
+        padding: 2rem;
+        margin: 0;
+    }
+}
+.zen-validate-html:hover, .zen-validate-css:hover, .zen-license:hover, .zen-accessibility:hover, .zen-github:hover,
+.zen-validate-html:focus, .zen-validate-css:focus, .zen-license:focus, .zen-accessibility:focus, .zen-github:focus {
+    font-size: 0rem;
+    opacity: .9;
+}
+.zen-validate-css {
+    background-image: url("../img/2.png");
+    }
+.zen-license {
+    background-image: url("../img/3.png");
+}
+.zen-accessibility {
+    background-image: url("../img/4.png");
+}
+.zen-github {
+    background-image: url("../img/5.png");
+}
+
+
+/***********/
+/*  aside  */
+/***********/
+.sidebar {
+    padding: 2rem;
+    padding-right: 12%;
+	text-align: right;
+    font-family: 'Helvetica Neue', sans-serif;
+    font-size: 1.3rem;
+    background: url("../img/bottom.jpg") no-repeat bottom center/cover;
+    background-attachment: fixed;
+    color: rgba(255,255,255,.8);
+}
+.sidebar h3 {
+    border-right: 1px solid rgba(255,255,255,.8);
+    border-radius: 1rem;
+
+    /*border-right: 1px solid rgba(255,255,255,.8);
+    border-top: 1px solid rgba(255,255,255,.8);*/
+    display: inline-block;
+    font-weight: bold;
+    color: rgba(255,255,255,.8);
+    padding: 1rem;
+    margin-top: 2rem;
+    margin-bottom: .5rem;
+}
+.sidebar a {
+    color: rgba(255,255,255,.8);
+    font-weight: normal;
+    text-decoration: none;
+}
+.sidebar a:hover, .sidebar a:focus{
+    color: #CA925C;
+    text-decoration: underline;
+}
+.design-selection, .design-archives, .zen-resources {
+    margin: 2rem 0;
+}
